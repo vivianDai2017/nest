@@ -9,6 +9,10 @@
             padding:0;
             border:0;
         }
+        .main{
+            width:100%;
+            height:100%;
+        }
         #myVideo{
             width:100%;
             height:100%;
@@ -31,11 +35,16 @@
             -o-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
         }
+        .primary-video source{
+            min-width: 100%;
+            min-height: 100%;
+        }
     </style>
 </head>
 <body>
+<!--<div class="main">-->
     <div id="myVideo">
-        <video class="primary-video" autoplay loop preload="metadata" height="763">
+        <video class="primary-video" autoplay loop height="763">
             <source src="video/homepage-video-summer-2017.m4v">
             <source src="video/homepage-video-summer-2017.mp4">
             <source src="video/homepage-video-summer-2017.ogv">
@@ -43,9 +52,10 @@
             浏览器版本过低，请升级....
         </video>
     </div>
+<!--</div>-->
     <script>
-        // var x = document.getElementsByClassName('primary-video')[0].autoplay;
-        // console.log(x);
+        var x = document.getElementsByClassName('primary-video')[0].autoplay;
+        console.log(x);
     </script>
 </body>
 </html>
