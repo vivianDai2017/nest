@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        body {
+            background-image:url('images/homepage.jpg');
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage.jpg',sizingMethod='scale');
+            position:relative;
+        }
+        @keyframes move {
+            from{top:95%;}
+            to{top:85%;}
+        }
+        .contact-us{
+            width:380px;
+            margin-left:-190px;
+            text-align:center;
+            font-size:16px;
+            line-height:24px;
+            font-weight:300;
+            font-family:'HeiS ASC Simplified Chinese','HeiS ASC Simplified Chinese_n5','HeiT ASC Traditional Chinese','HelveticaNeue-Regular','Helvetica Neue Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+            color:#fff;
+            position:absolute;
+            top:85%;
+            left:50%;
+            animation:move .5s linear;
+        }
+        @media screen and (max-width:768px) {
+            body{
+                background-image:url('images/homepage-min.jpg');
+                filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homopage-min.jpg',sizingMethod='scale');
+            }
+            .contact-us{
+                font-size:13px;
+                width:310px;
+                line-height:1.5;
+                margin-left:-155px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="header">首页</div>
+<div class="header-nav">
+    <!--IE8-->
+    <!--[if IE 8]>
+    <div class="container">
+        <ul>
+            <li><a class="active" href="index.html">永恒</a></li>
+            <li><a href="product1.html">初心</a></li>
+            <li><a href="product2.html">高端定制</a></li>
+        </ul>
+    </div>
+    <![endif]-->
+</div>
+<div class="contact-us">速度卓越的车款，拥有突破记录的加速性能、续航里程和驾驶性能</div>
+<script src="js/jquery.js"></script>
+<script src="js/header.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
