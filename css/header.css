@@ -1,0 +1,92 @@
+.header-nav{
+    width:100%;
+    height:52px;
+}
+.header-nav>.container{
+    padding:0 20px;
+    text-align:center;
+    height:52px;
+    line-height:52px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    width:calc(100% - 40px);
+}
+.header-nav>.container>ul{
+    diaplay:inline-block;
+    float:right;
+}
+.header-nav>.container>ul>li{
+    display:inline-block;
+    margin-left:30px;
+}
+.header-nav>.container>ul>li>a{
+    color:#000;
+    font-size:1.5rem;
+    font-size:24px;
+    /*font-family:Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-weight:normal;
+    display:block;
+    height:100%;
+    line-height:1.75;
+    cursor:pointer;
+    transition:color 0.15s ease-in-out;
+    text-transform:uppercase; /*定义仅有大写字母*/
+}
+.header-nav>.container>ul>li>a.active{
+    opacity:0.4;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /*IE6~IE8*/
+}
+.header-nav>.container>ul>li>a:hover{
+    opacity:0.5;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);/*IE6~IE8*/
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.header-nav>.container>.header-nav-trigger{
+    display:none;
+}
+@media screen and (max-width:768px) {
+    /*屏幕变小到一定时隐藏*/
+    .header-nav>.container>ul{
+        display:none;
+        background-color:#fff;
+        width:50vw;
+        min-width:160px;
+        height:100vh;
+        transition:all 1s linear;
+        margin-right:-20px;
+    }
+    .header-nav>.container>ul>li{
+        display:block;
+    }
+    .header-nav>.container>ul>li>a{
+        margin:0 20px;
+        padding:20px 10px;
+        color:#222;
+        font-size:13px;
+        border-bottom:1px solid #ddd;
+    }
+    .header-nav>.container>.header-nav-trigger{
+        display:inline-block;
+        width:30px;
+        height:30px;
+        float:right;
+    }
+    .header-nav>.container>.header-nav-trigger>div{
+        padding:6px;
+    }
+    .header-nav>.container>.header-nav-trigger>div>i{
+        display:block;
+        background-color:#000;
+        width:100%;
+        height:2px;
+    }
+    .header-nav>.container>.header-nav-trigger>div>i.middle{
+        margin:3px 0;
+    }
+}

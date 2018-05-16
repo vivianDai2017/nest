@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,div{
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        #myVideo{
+            width:100%;
+            height:100%;
+            min-height:100%;
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+        }
+        .primary-video{
+            min-width:100%;
+            min-height:100%;
+            position:absolute;
+            left:50%;
+            top:50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="myVideo">
+        <video class="primary-video" autoplay loop preload="metadata" height="763">
+            <source src="video/homepage-video-summer-2017.m4v">
+            <source src="video/homepage-video-summer-2017.mp4">
+            <source src="video/homepage-video-summer-2017.ogv">
+            <source src="video/homepage-video-summer-2017.webm">
+            浏览器版本过低，请升级....
+        </video>
+    </div>
+    <script>
+        // var x = document.getElementsByClassName('primary-video')[0].autoplay;
+        // console.log(x);
+    </script>
+</body>
+</html>

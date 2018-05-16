@@ -1,0 +1,25 @@
+@media screen and (min-width:1200px) {
+    .container>.bg_img{
+        background-image:url('../images/homepage.jpg');
+    }
+}
+@media screen and (min-width:960px) and (max-width:1199px) {
+    .container>.bg_img{
+        background-image:url('../images/homepage.jpg');
+    }
+}
+@media screen and (min-width:768px) and (max-width:959px) {
+    .container>.bg_img{
+        background-image:url('../images/homepage.jpg');
+    }
+}
+@media screen and (min-width:480px) and (max-width:767px) {
+    .container>.bg_img{
+        background-image:url('../images/homepage.jpg');
+    }
+}
+@media screen and (max-width:479px) {
+    .container>.bg_img{
+        background-image:url('../images/homepage.jpg');
+    }
+}

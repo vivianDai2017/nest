@@ -1,0 +1,34 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    margin: 0;
+    padding: 0;
+    vertical-align:center;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main{
+    width:100%;
+}
+div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family:Gotham Medium,"M Hei PRC W45","M Hei HK W42","M Hei HK W40","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    height:100%;
+    min-height:100%;
+    position:relative;
+    /*background-image:url('../images/homepage.jpg');*/
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center center;
+    /*-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/homepage.jpg',sizingMethod='scale')";*/
+
+}
